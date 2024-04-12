@@ -20,3 +20,8 @@ export function increaseCount() {
   //renderCounter(data);
   changeDataCallBack();
 }
+export function decreaseCount() {
+  data.count--;
+  //renderCounter(data);
+  changeDataCallBack();
+}

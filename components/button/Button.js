@@ -1,9 +1,6 @@
-import { increaseCount } from "../../data/dataCounter.js";
-
-increaseCount;
-export function Button(someTitle) {
+export function Button(someTitle, someClickHandler) {
   const buttonElement = document.createElement("button");
   buttonElement.innerText = someTitle;
-  buttonElement.addEventListener("click", increaseCount);
+  buttonElement.addEventListener("click", someClickHandler);
   return buttonElement;
 }
